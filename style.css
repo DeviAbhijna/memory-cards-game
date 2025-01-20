@@ -1,0 +1,78 @@
+body {
+    background-color: #f5eeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+      background-image: url('imgs/background.jpg'); /* Image path */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #f5eeee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: sans-serif;
+      color: white;
+    }
+    
+  
+  .start-btn {
+    cursor: pointer;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    background-color: #f72363;
+    color: white;
+  }
+  
+  .card {
+    background-color: #f72363;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px 60px;
+    width: 80%;
+    height: 80%;
+  }
+  .win-message {
+    color: rgb(238, 12, 117);
+  }
+  
+  
+  .card img {
+    width: 60%;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .win {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  @media (max-width: 900px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 15px 15px;
+      width: 80%;
+      height: 80%;
+    }
+  }
